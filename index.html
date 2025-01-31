@@ -24,17 +24,23 @@
     .font-sora {
       font-family: sora;
     }
+
+    .product-gradient {
+      background: url("images/vegetable-offer.png"), linear-gradient(to right, green, lime);
+      background-position: bottom right;
+      background-repeat: no-repeat;
+    }
   </style>
 </head>
 
 <body class="font-sora">
   <header style="background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);">
     <nav class="lg:mb-[50px]">
-      <div class="navbar w-10/12 mx-auto">
+      <div class="navbar w-10/12 mx-auto pt-5">
         <div class="navbar-start hidden lg:block">
           <img src="images/logo-header.png" alt="nature's platter">
         </div>
-        <div class="navbar-start -ml-8 lg:hidden">
+        <div class="navbar-start -ml-4 lg:hidden">
           <img src="images/Group 9182.png" alt="nature's platter">
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -68,29 +74,178 @@
       </div>
     </div>
   </header>
-  <section class="bg-white lg:w-10/12 mx-auto lg:flex lg:gap-20 lg:my-15">
-    <div class="cards w-10/12 mx-auto m-8">
-      <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
-        <img class="rounded-full p-4  m-4 mx-auto bg-white" src="images/service.png" alt="">
-        <h3 class="font-bold text-xl mb-3">24/7 Services</h3>
-        <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-      </div>
-    </div>
-    <div class="cards w-10/12 mx-auto m-8">
-      <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
-        <img class="rounded-full p-4  m-4 mx-auto bg-white" src="images/delivery.png" alt="">
-        <h3 class="font-bold text-xl mb-3">24/7 Services</h3>
-        <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-      </div>
-    </div>
-    <div class="cards w-10/12 mx-auto m-8">
-      <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
-        <img class="rounded-full p-4  m-4 mx-auto bg-white" src="images/healthy.png" alt="">
-        <h3 class="font-bold text-xl mb-3">24/7 Services</h3>
-        <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+  <section class="bg-white services-section">
+    <div class="lg:w-10/12 mx-auto">
+      <h3 class="text-3xl font-bold text-green-500 mt-8 ml-9 lg:mt-20 lg:-ml-2">Services</h3>
+      <div class="lg:flex lg:gap-20 lg:my-15">
+        <div class="cards w-10/12 mx-auto m-8">
+          <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
+            <img class="rounded-full p-5  m-4 mx-auto bg-white" src="images/service.png" alt="">
+            <h3 class="font-bold text-xl mb-3">24/7 Services</h3>
+            <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed do
+              eiusmod tempor incididunt</p>
+          </div>
+        </div>
+        <div class="cards w-10/12 mx-auto m-8">
+          <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
+            <img class="rounded-full p-5  m-4 mx-auto bg-white" src="images/delivery.png" alt="">
+            <h3 class="font-bold text-xl mb-3">Fast Delivery</h3>
+            <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed do
+              eiusmod tempor incididunt</p>
+          </div>
+        </div>
+        <div class="cards w-10/12 mx-auto m-8">
+          <div class="bg-[#efebe3] text-center pt-4 rounded-2xl">
+            <img class=" rounded-full p-5  m-4 mx-auto bg-white" src="images/healthy.png" alt="">
+            <h3 class="font-bold text-xl mb-3">Healthy Products </h3>
+            <p class="text-[#111111] text-l pb-11 px-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,
+              sed do
+              eiusmod tempor incididunt</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <section class="bg-[#EFEBE3] mx-auto">
+    <div class="lg:w-10/12 lg:mx-auto lg:py-10 pb-12">
+      <div class="">
+        <h3 class="text-3xl font-bold text-green-500 mt-8 lg:mb-12 lg:ml-0 ml-7 pb-8 pt-10 ">
+          Popular Products
+        </h3>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:gap-6 lg:pb-20">
+        <div class=" product-gradient rounded-xl w-110 mx-auto mb-10 pb-5">
+          <h4 class="text-white text-2xl pl-8 pt-12 pb-3">30% Off</h4>
+          <p class="text-base pl-8">Discover a world of treats, toys and <br> essentials hand picked for</p>
+          <button class="text-2xl ml-8 mt-5 mb-40 bg-white text-[#111111] px-4 py-2 rounded-lg text-xl">Buy Now</button>
+        </div>
+        <div class="w-11/12 mx-auto grid grid-cols-2 gap-2 lg:grid-cols-3 lg:gap-5">
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/onion.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-2">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Onion 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class="rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/tomato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Tomato 500 g</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/potato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Potato 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/tomato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Tomato 500 g</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/onion.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Onion 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/tomato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Tomato 500 g</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/onion.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Onion 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/potato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Potato 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+          <div class="card hidden lg:block lg:flex bg-white flex flex-row items-center">
+            <div class=" rounded-lg">
+              <img class="ml-3 lg:w-30" src="images/potato.png" alt="">
+            </div>
+            <div class="card-body">
+              <div class="flex gap-4">
+                <img class="w-6" src="images/star.png" alt="">
+                <p class="text-lg font-bold">4.5</p>
+              </div>
+              <h2 class="card-title font-bold">Potato 1 KG</h2>
+              <p class="text-lg font-bold">$39.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  
   <footer>
 
   </footer>
