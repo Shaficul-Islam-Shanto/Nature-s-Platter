@@ -30,12 +30,38 @@
       background-position: bottom right;
       background-repeat: no-repeat;
     }
+
+    @keyframes example {
+      0% {
+        background-color: rgb(83, 226, 126);
+      }
+
+      25% {
+        background-color: rgb(105, 211, 131);
+      }
+
+      50% {
+        background-color: rgb(130, 223, 153);
+      }
+
+      100% {
+        background-color: rgb(194, 247, 194);
+      }
+    }
+
+    .hero {
+      background-color: #EFEBE3;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
   </style>
 </head>
 
 <body class="font-sora">
   <header style="background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);">
-    <nav class="lg:mb-[50px]">
+    <nav class="lg:mb-[40px]">
       <div class="navbar w-10/12 mx-auto pt-5">
         <div class="navbar-start hidden lg:block">
           <img src="images/logo-header.png" alt="nature's platter">
@@ -60,7 +86,7 @@
       </div>
     </nav>
     <hr class="border-1 border-green-500 lg:hidden">
-    <div class="hero">
+    <div class="hero pt-8">
       <div class="hero-content text-center">
         <div class="w-full">
           <h1 class="text-5xl font-bold leading-9=">Freshness <span class="text-green-500">You Can <br>
@@ -69,7 +95,7 @@
             Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
             covered every day!
           </p>
-          <img class="mt-[30px]" src="images/hero-vegetables.png" alt="">
+          <img class="mt-[30px] hero-image" src="images/hero-vegetables.png" alt="">
         </div>
       </div>
     </div>
@@ -116,7 +142,7 @@
         </h3>
       </div>
       <div class="flex flex-col lg:flex-row lg:gap-6 lg:pb-20">
-        <div class=" product-gradient rounded-xl w-98 mx-auto mb-10 pb-5">
+        <div class=" product-gradient rounded-xl w-85 mx-auto lg:w-100 mb-5 pb-2 lg:mb-10 lg:pb-5">
           <h4 class="text-white text-2xl pl-8 pt-12 pb-3">30% Off</h4>
           <p class="text-base pl-8">Discover a world of treats, toys and <br> essentials hand picked for</p>
           <button class="text-2xl ml-8 mt-5 mb-40 bg-white text-[#111111] px-4 py-2 rounded-lg text-xl">Buy Now</button>
@@ -245,48 +271,99 @@
     </div>
     </div>
   </section>
+
+
+  <section class="review-section bg-white mx-auto">
+
+    <div class="w-10/12 mx-auto my-10 lg:my-40 ">
+      <h2 class="text-green-500 font-bold text-2xl lg:text-3xl mb-10 lg:mb-20">Our Happy Clients
+      </h2>
+      <div class="space-y-5 flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:justify-center lg:items-center lg:flex-row lg:space-x-5 space-y-5">
+          <div class="cards flex items-center bg-gray-200 rounded-xl mb-1 lg:mt-4">
+            <div class="w-50 lg:w-65 rounded-lg">
+              <img class="rounded-xl pl-3 lg:p-5" src="images/person-2.png" alt="Movie" />
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions">
+                <p class="font-bold flex">Alan Walker</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards flex items-center bg-gray-200 rounded-xl">
+            <div class="w-50 lg:w-65 rounded-lg">
+              <img class=" rounded-xl pl-3 lg:p-5" src="images/person-2.png" alt="Movie" />
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions justify-end">
+                <p class="font-bold">Alan Walker</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards flex items-center bg-gray-200 rounded-xl">
+            <div class="w-50 lg:w-65 rounded-lg">
+              <img class="rounded-xl pl-3 lg:p-5" src="images/person-2.png" alt="Movie" />
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions justify-end">
+                <p class="font-bold">Alan Walker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="bg-white Arrival-Offer-Section mx-auto relative">
     <div class="w-10/12 mx-auto my-10 lg:mb-40">
       <div class="mb-8 lg:pt-12">
         <h2 class="text-green-500 font-bold text-2xl lg:text-3xl">Arrival & Offers</h2>
       </div>
-      <div class="lg:w-10/12 flex flex-col lg:flex-row lg:gap-15 lg:mb-100 mb-80 lg:mt-35 mx-auto">
-        <div class="bg-[#115414] flex justify-around lg:justify-around rounded-xl lg:rounded-3xl mb-5">
-          <div class="pl-5 lg:pl-8">
-            <div class="mt-6 lg:mt-12 mb-4 lg:mb-8"><img class="w-45 lg:w-60 " src="images/dawat-logo.png" alt=""></div>
+      <div class="lg:w-10/12 flex flex-col lg:flex-row lg:gap-10 lg:mb-100 mb-80 lg:mt-35 mx-auto">
+        <div class="bg-[#115414] flex lg:w-6/10 justify-around lg:justify-around rounded-xl lg:rounded-3xl mb-5">
+          <div class="pl-4 lg:pl-8">
+            <div class="mt-6 lg:mt-12 mb-4 lg:mb-10"><img class="w-45 lg:w-65 " src="images/dawat-logo.png" alt="">
+            </div>
             <button
-              class="text-white text-sm lg:text-xl ml-3 lg:ml-8 mb-3 lg:mb-6 rounded-lg lg:rounded-xl bg-[#63B76D] px-3 lg:px-8 py-2 lg:py-4">Cook
+              class="text-white text-sm lg:text-xl ml-3 lg:ml-8 mb-3 lg:mb-10 rounded-lg lg:rounded-xl bg-[#63B76D] px-3 lg:px-8 py-2 lg:py-4">Cook
               Exotic Dishes</button>
             <h2 class="text-white text-xl lg:text-4xl ml-5 lg:ml-8 mb-5 lg:mb-8">UP to <span class="font-bold">20%
                 OFF</span></h2>
           </div>
-          <div class="w-45 lg:w-70 pt-8 lg:pt-12 pl-2 lg:pl-4 lg:ml-6">
+          <div class="w-45 lg:w-80 pt-6 lg:pt-10 pl-2 lg:pl-4 lg:ml-6">
             <img class="w-full" src="images/dawat-mock-up.png" alt="">
           </div>
         </div>
-        <div class="bg-[#102861] flex justify-around lg:justify-around rounded-xl lg:rounded-3xl mb-5">
-          <div class="pl-5 lg:pl-8">
-            <div class="mt-3 lg:mt-6 ml-4 lg:ml-8 mb-1 lg:mb-2"><img class="w-15 lg:w-24"
+        <div class="bg-[#102861] flex lg:w-4/10 justify-around lg:justify-around rounded-xl lg:rounded-3xl mb-5">
+          <div class="pl-4 lg:pl-5">
+            <div class="mt-3 lg:mt-5 lg:ml-6 mb-3 lg:mr-2 mr-2 lg:mb-5"><img class="w-15 lg:w-24"
                 src="images/india-gate-logo.png" alt=""></div>
             <button
-              class="text-white text-sm lg:text-xl ml-5 lg:ml-8 mb-4 lg:8 rounded-lg lg:rounded-xl bg-[#2A4D97] px-4 lg:px-8 py-2 lg:py-4">World's
+              class="text-white text-sm lg:text-lg pl-3 lg:pl-5 mb-3 lg:mb-8 rounded-lg lg:rounded-xl bg-[#2A4D97] px-4 lg:px-8 py-2 lg:py-4">World's
               No.1 Rice</button>
-            <h2 class="text-white text-xl lg:text-4xl lg:ml-8 mb-5 lg:mb-8">UP to <span class="font-bold">40%
+            <h2 class="text-white text-xl lg:text-2xl lg:ml-3 mb-5 lg:mb-8  ">UP to <span class="font-bold">40%
                 OFF</span></h2>
           </div>
-          <div class="w-25 lg:w-50 pt-5 lg:pt-9 ml-12 mr-3 lg:ml-20">
-            <img src="images/india-gate-mock-up.png" alt="">
+          <div class="w-25 lg:w-45 pt-5 lg:pt-12 ml-10 mr-5 lg:ml-20">
+            <img class="w-full" src="images/india-gate-mock-up.png" alt="">
           </div>
         </div>
       </div>
     </div>
-    <section class="bg-[#EFEBE3] w-10/12 mx-auto rounded-2xl absolute top-130 left-11 lg:top-190 lg:left-40 ">
+    <section class="bg-[#EFEBE3] w-10/12 mx-auto rounded-2xl absolute top-150 left-10 lg:top-180 lg:left-40 ">
       <div class=" flex flex-col lg:flex-row lg:justify-around lg:items-center lg:gap-15">
         <div class="lg:my-12 mt-8 lg:ml-25"><img class="w-full" src="images/vegetable-busket.png" alt=""></div>
         <div class="lg:w-150 text-center lg:text-start">
           <h2 class="font-bold mt-6 mb-3 text-green-500 text-xl  lg:text-3xl">Get Grocery News!</h2>
           <p class="text-base mb-5 mx-5 lg:mx-0 font-bold">Exclusive training tips, ticks, product deals and more.</p>
-          <input class="bg-white rounded-lg mb-3 px-6 py-3 lg:py-5 lg:pr-60" type="text" placeholder="Enter email..."> <br>
+          <input class="bg-white rounded-lg mb-3 px-6 py-3 lg:py-5 lg:pr-60" type="text" placeholder="Enter email...">
+          <br>
           <button class=" bg-green-500 mt-3 mb-10 px-4 py-2 rounded-lg text-white text-lg">Subscribe</button>
         </div>
       </div>
